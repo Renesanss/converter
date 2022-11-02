@@ -25,10 +25,12 @@
     <header class="header">
         <h1 class="header__title">Kalkulator Walut</h1>
     </header>
-    <div class="container">
-        <p>Jak korzystać z kalkulatora walut?
-            Wpisz kwotę, którą chcesz przeliczyć, następnie
-            wskaż, z jakiej waluty i na jaką walutę przeliczasz. Uwaga! Pola oznaczone "*" są obowiązkowe!</p>
+    <div class="header__container">
+        <div class="container">
+            <p>Jak korzystać z kalkulatora walut?
+                Wpisz kwotę, którą chcesz przeliczyć, następnie
+                wskaż, z jakiej waluty i na jaką walutę przeliczasz. Uwaga! Pola oznaczone * są obowiązkowe!</p>
+        </div>
         <form class="form js-form">
             <fieldset class="form__fieldset">
                 <legend class="form__legend">Kalkulator Walut</legend>
@@ -37,8 +39,8 @@
                         <span class="form__labelText">
                             Kwota w PLN*:
                         </span>
-                        <input class="form__field js-amount" type="number" name="amount" step="0.01" min="0"
-                            class="js-amount" required>
+                        <input class="form__field js-amount" type="number" name="amount" placeholder="Wpisz kwotę"
+                            step="0.01" min="0" class="js-amount" required>
                     </label>
                 </p>
                 <p>
@@ -56,11 +58,12 @@
             <p>
                 <button class="form__button js-converterButton" type="submit">Przelicz</button>
             </p>
-            <p class="paragraph">
+            <p class="form__paragraph">
                 Po przeliczeniu kwota wynosi:<strong class="paragraph__result js-result">n/a</strong>
                 <span class="js-currency"></span>
             </p>
         </form>
     </div>
 </body>
+
 </html>
