@@ -34,9 +34,9 @@
 }
 
 .form__fieldset {
-padding: 20px;
-border-radius: 5px;
-margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 .form__field:invalid {
@@ -45,4 +45,12 @@ margin: 20px 0;
 
 .form__legend {
     padding: 10px;
+}
+
+.form__paragraph {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgba(27, 26, 26, 0.623);
+    border-radius: 5px;
 }

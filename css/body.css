@@ -1,3 +1,6 @@
 .body {
-    background: rgba(103, 185, 190, 0.384)
+    background-image: url(../images/Exchange-Money-In-English-Language-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
