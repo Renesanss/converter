@@ -1,35 +1,33 @@
-let formElement = document.querySelector(".js-form");
-let amountElement = document.querySelector(".js-amount");
-let currencyToElement = document.querySelector(".js-currencyTo");
-let resultElement = document.querySelector(".js-result");
-let euroElement = document.querySelector(".js-euro");
-let usdElement = document.querySelector(".js-usd");
-let converterButtonElement = document.querySelector(".js-converterButton");
-let currencyElement = document.querySelector(".js-currency");
+const calculateResult = () => {
+    const amountElement = document.querySelector(".js-amount");
+    const currencyToElement = document.querySelector(".js-currencyTo");
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+    const select = currencyToElement.value;
+    const input = amountElement.value;
 
-let select = currencyToElement.value;
-let input = amountElement.value;
+    convert = input / select;
+};
 
-let convert = input / select;
+const init = () => {
+    const formElement = document.querySelector(".js-form");
+    formElement.addEventListener("submit", (event) => {
+        event.preventDefault();
+        calculateResult();
+const resultElement = document.querySelector(".js-result");
 
-resultElement.innerText = convert.toFixed(2);
+        resultElement.innerText = convert.toFixed(2);
+    });
+
+};
+
+init();
 
 
 
-currencyElement.innerText = currencyToElement.value === euroElement.value ? "EURO" : "USD";
-});
-    
 
 
-    
 
-    
 
-    
-    
-    
-  
-    
+
+
+
