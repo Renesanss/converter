@@ -6,4 +6,5 @@
 - HTML,  
 - CSS, 
 - BEM convention
+- ES6+ features
 
